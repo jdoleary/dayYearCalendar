@@ -20,20 +20,9 @@ module.exports.prototype.renderHTML = function($container){
   $container.append($html);
   this.setup();
   
-  
   $('.day-year-cal-holder .square').mouseover(function() {
     $('.day-year-cal-holder .info').html($(this).data('date'));
   });
-  // TEST SHOW:///////////////////////
-  var showData = [];
-  for (i = 0; i < 375; i++) {
-    var today = new Date();
-    var daysDate = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getDate());
-    daysDate.setDate(daysDate.getDate() - i);
-    showData.push({date:daysDate,value:Math.random()*17-6});
-  }
-  this.addColorData(showData);
-  ////////////////////////////////////////
   
 }
 module.exports.prototype.setup = function(){
