@@ -1,6 +1,6 @@
 # dayYearCalendar
 Calendar shows all days in a year at a glance.  Inspired by GitHub's "Contribution's Calendar".
-[Day Year Calendar!](./preview.png)
+![Day Year Calendar](/preview.PNG?raw=true "Screenshot")
 
 # Usage
 To see dayYearCalendar in action, just open index.html in a browser.
