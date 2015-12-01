@@ -10,8 +10,8 @@ If you have questions for how to compile the project or use it in your own, feel
 
 # Build
 At project root run
-> npm install
+"npm install"
 then
-> npm run build
+"npm run build"
 Then import dayYearCal.css and usageExample.js in your html.
 Open the html and you should see the calendar in all it's glory!
