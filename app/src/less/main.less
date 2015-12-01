@@ -1,0 +1,51 @@
+.day-year-cal-holder{
+  
+  .day-of-the-week-holder{
+    height:12px;
+  }
+  .day-of-the-week{
+    height:11px;
+    display:inline-flex;
+  }
+  #MonthLabelHolder .square{
+    background-color:transparent;
+    height:16px;
+    line-height:16px;
+  }
+  .label{
+    background-color:white;
+    color:black;
+    line-height:11px;
+    margin-right:5px;
+    font-size:11px;
+    text-align:center;
+  }
+  .info{
+    margin-top:10px;
+  }
+  .square{
+    display:inline-block;
+    width:11px;
+    height:11px;
+    background-color:#d6d6d6;
+    margin-right: 1px;
+    cursor:pointer;
+    &.low{
+      background-color:#86ADF5;
+      
+    }
+    &.med{
+      background-color:#5187FF;
+      
+    }
+    &.high{
+      background-color:#286AFF;
+      
+    }
+    &.very-high{
+      background-color:#0043FF;
+      
+    }
+    
+  }
+}

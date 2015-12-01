@@ -1,0 +1,25 @@
+{
+  "name": "days-in-a-year-calendar",
+  "version": "1.0.0",
+  "description": "For all the days in a year, this calendar shows each as a cell of a grid with a color representing the day's value.  This calendar is inspired by GitHub's \"contributions calendar\"",
+  "main": "app/index.html",
+  "scripts": {
+    "build": "npm run clean && npm run build:js && npm run build:css",
+    "build:js": "browserify ./app/src/js/usageExample.js -o ./app/dist/usageExample.js",
+    "build:css": "lessc -x ./app/src/less/main.less ./app/dist/dayYearCal.css",
+    "clean": "rimraf ./app/dist/*"
+  },
+  "keywords": [
+    "calendar",
+    "days",
+    "github",
+    "year"
+  ],
+  "author": "Jordan O'Leary",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^6.3.2",
+    "less": "^2.5.3",
+    "rimraf": "^2.4.4"
+  }
+}
