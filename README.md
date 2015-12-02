@@ -26,9 +26,9 @@ If you have questions for how to compile the project or use it in your own, feel
 
 # Build
 At project root run
-"npm install"
+`npm install`
 then
-"npm run build"
+`npm run build`
 Then import 
   * app/dist/UsageExample.js
   * app/dist/DayYearCalendar.css
