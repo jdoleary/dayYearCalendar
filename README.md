@@ -20,7 +20,7 @@ The following javascript will create an instance of DayYearCalendar, add a littl
     dayYearCal.addColorData(dateInformation);
 ```
 
-DayYearCalendar can also be required and built, see app/src/js/usageExample.js.
+DayYearCalendar can also be required and built, see [Browserify Example](/app/src/js/usageExample.js).
 
 If you have questions for how to compile the project or use it in your own, feel free to email me at jdoleary[at]gmail.com
 
