@@ -5,8 +5,8 @@
   "main": "app/index.html",
   "scripts": {
     "build": "npm run clean && npm run build:js && npm run build:css",
-    "build:js": "browserify ./app/src/js/usageExample.js -o ./app/dist/usageExample.js",
-    "build:css": "lessc -x ./app/src/less/main.less ./app/dist/dayYearCal.css",
+    "build:js": "uglifyjs ./app/src/js/DayYearCalendar.js -o ./app/dist/DayYearCalendar.min.js && browserify ./app/src/js/usageExample.js -o ./app/dist/usageExample.js",
+    "build:css": "lessc -x ./app/src/less/main.less ./app/dist/DayYearCalendar.css",
     "clean": "rimraf ./app/dist/*"
   },
   "keywords": [
@@ -20,6 +20,7 @@
   "devDependencies": {
     "browserify": "^6.3.2",
     "less": "^2.5.3",
-    "rimraf": "^2.4.4"
+    "rimraf": "^2.4.4",
+    "uglify-js": "^2.6.1"
   }
 }

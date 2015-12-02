@@ -31,6 +31,27 @@
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.3.min.js"><\/script>')</script>
     <!--<![endif]-->
     
-    <script src="dist/usageExample.js"></script>
+    <script src="dist/DayYearCalendar.min.js"></script>
+    <script>
+    var dayYearCal = new DayYearCalendar();
+    dayYearCal.renderHTML($('.dayYearCalendar'));
+
+    /**
+     * Add data to calendar:
+     * Data should be in the format:
+     * var data = [
+     *  {date:1448946000000,value:4},
+     *  {date:1448686800000,value:3}
+     * ];
+     */
+    var showData = [];
+    for (i = 0; i < 375; i++) {
+      var today = new Date();
+      var daysDate = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getDate());
+      daysDate.setDate(daysDate.getDate() - i);
+      showData.push({date:daysDate,value:Math.random()*17-6});
+    }
+    dayYearCal.addColorData(showData);
+    </script>
   </body>
 </html>

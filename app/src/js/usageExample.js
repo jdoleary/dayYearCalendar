@@ -1,5 +1,5 @@
-var dayYearCal = require('./dayYearCal');
-dayYearCal = new dayYearCal();
+var DayYearCalendar = require('./DayYearCalendar');
+dayYearCal = new DayYearCalendar();
 dayYearCal.renderHTML($('.dayYearCalendar'));
 
 /**

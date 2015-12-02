@@ -1,4 +1,3 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /** 
  * DayYearCalendar.js - v1.0.1 - 2015-12-02
  * http://www.nestfall.com
@@ -121,25 +120,3 @@ DayYearCalendar.prototype = {
   }
 
 })(window, document, 'DayYearCalendar');
-},{}],2:[function(require,module,exports){
-var DayYearCalendar = require('./DayYearCalendar');
-dayYearCal = new DayYearCalendar();
-dayYearCal.renderHTML($('.dayYearCalendar'));
-
-/**
- * Add data to calendar:
- * Data should be in the format:
- * var data = [
- *  {date:1448946000000,value:4},
- *  {date:1448686800000,value:3}
- * ];
- */
-var showData = [];
-for (i = 0; i < 375; i++) {
-  var today = new Date();
-  var daysDate = new Date(today.getUTCFullYear(), today.getUTCMonth(), today.getDate());
-  daysDate.setDate(daysDate.getDate() - i);
-  showData.push({date:daysDate,value:Math.random()*17-6});
-}
-dayYearCal.addColorData(showData);
-},{"./DayYearCalendar":1}]},{},[2]);

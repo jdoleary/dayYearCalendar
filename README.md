@@ -3,8 +3,23 @@ Calendar shows all days in a year at a glance.  Inspired by GitHub's "Contributi
 ![Day Year Calendar](/preview.PNG?raw=true "Screenshot")
 
 # Usage
-To see dayYearCalendar in action, just open index.html in a browser.
-Open src/usageExample.js to see simple usage.
+To use DayYearCalendar, simply import 
+  * app/dist/DayYearCalendar.min.js
+  * app/dist/DayYearCalendar.css
+  * and jQuery
+  
+```javascript
+    var dayYearCal = new DayYearCalendar();
+    dayYearCal.renderHTML($('body'));
+
+    var dateInformation = [
+      {date:1448946000000,value:4},
+      {date:1448686800000,value:3}
+    ];
+    dayYearCal.addColorData(dateInformation);
+```
+
+DayYearCalendar can also be required and built, see app/src/js/usageExample.js.
 
 If you have questions for how to compile the project or use it in your own, feel free to email me at jdoleary[at]gmail.com
 
