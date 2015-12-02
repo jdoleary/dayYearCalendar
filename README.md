@@ -29,5 +29,8 @@ At project root run
 "npm install"
 then
 "npm run build"
-Then import dayYearCal.css and usageExample.js in your html.
+Then import 
+  * app/dist/UsageExample.js
+  * app/dist/DayYearCalendar.css
+  * and jQuery
 Open the html and you should see the calendar in all it's glory!
