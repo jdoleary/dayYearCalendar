@@ -8,6 +8,7 @@ To use DayYearCalendar, simply import
   * app/dist/DayYearCalendar.css
   * and jQuery
   
+The following javascript will create an instance of DayYearCalendar, add a little data to it, and render it to the HTML body. See ![Plain Import](/app/plainImport.html)
 ```javascript
     var dayYearCal = new DayYearCalendar();
     dayYearCal.renderHTML($('body'));
