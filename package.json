@@ -1,13 +1,17 @@
 {
-  "name": "days-in-a-year-calendar",
+  "name": "dayyearcalendar",
   "version": "1.0.0",
   "description": "For all the days in a year, this calendar shows each as a cell of a grid with a color representing the day's value.  This calendar is inspired by GitHub's \"contributions calendar\"",
-  "main": "app/index.html",
+  "main": "app/dist/DayYearCalendar.min.js",
   "scripts": {
     "build": "npm run clean && npm run build:js && npm run build:css",
     "build:js": "uglifyjs ./app/src/js/DayYearCalendar.js -o ./app/dist/DayYearCalendar.min.js && browserify ./app/src/js/usageExample.js -o ./app/dist/usageExample.js",
     "build:css": "lessc -x ./app/src/less/main.less ./app/dist/DayYearCalendar.css",
     "clean": "rimraf ./app/dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdoleary/dayYearCalendar.git"
   },
   "keywords": [
     "calendar",
@@ -15,7 +19,7 @@
     "github",
     "year"
   ],
-  "author": "Jordan O'Leary",
+  "author": "Jordan O'Leary <jdoleary@gmail.com> (http://www.nestfall.com)",
   "license": "ISC",
   "devDependencies": {
     "browserify": "^6.3.2",
